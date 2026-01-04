@@ -6,7 +6,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Interf i = (a,b) -> System.out.println("the sum :- "+  (a+b) );		//here variable "i" is holding the complete behavior/method logic/Lambda Expression
+		Interf i = (a,b) -> System.out.println("the sum :- "+  (a+b));		//here variable "i" is holding the complete behavior/method logic/Lambda Expression
 		
 		i.add(10 , 20);
 		

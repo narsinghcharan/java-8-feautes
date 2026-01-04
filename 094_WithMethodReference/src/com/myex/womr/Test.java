@@ -28,7 +28,7 @@ The biggest advantage of Method Reference is code re-usability. ie. already exis
 I am using for m1() method implementation instead of defining new implementation.
 
 Method reference condition :-
-while using method reference, referrer and referring both methods should have same arguments, but method name, 
+while using method reference, referrer and referring both methods should have same arguments types, but method name, 
 return type, access modifiers can be different and both method can be static or non static in any combination is fine.
 
 Method Reference is alternative syntax to lambda expression.

@@ -21,9 +21,10 @@ public class MaxProcessingTest {
 		System.out.println(l1);
 	
 	//	List<Integer> l2 = l1.stream().sorted((i1,i2) -> i2.compareTo(i1)).collect(Collectors.toList());
-
+	//	System.out.println("Default Natural Sorting Order : " + l2);
+		
 		List<Integer> l2 = l1.stream().sorted((i1,i2) -> -i1.compareTo(i2)).collect(Collectors.toList());
-
-		System.out.println("Default Natural Sorting Order : " + l2);
+		System.out.println("Descending Sorting Order : " + l2);
+		
 	}
 }

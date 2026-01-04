@@ -15,7 +15,7 @@ public class Test {
 
 /*
 interface ToIntFunction<T> {
-	public int applyAsInt(T n);
+	public int applyAsInt(T t);
 }
 
 */

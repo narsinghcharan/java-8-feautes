@@ -28,7 +28,7 @@ public class StreamGroupingBy {
 		students.add(new Student(8,"Kuni",31, address3));
 		students.add(new Student(9,"Santuni",30, address3));
 		students.add(new Student(10,"Charan",29, address3));
-	
+		
 		/*
 		// I want to sort this list of students object by there Name and if Name is same then by their Age.
 		Comparator<Student> comparatorFunction = Comparator.comparing(Student::getName).thenComparing(Student::getAge);

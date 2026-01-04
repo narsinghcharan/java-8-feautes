@@ -1,6 +1,5 @@
 package com.myex.slwole;
 
-import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -8,23 +7,15 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Set<Integer> l = new TreeSet<Integer>(new MyComparator());
+		Set<Integer> s = new TreeSet<Integer>(new MyComparator());
 		
-		l.add(5);
-		l.add(2);
-		l.add(9);
-		l.add(6);
-		l.add(4);
+		s.add(5);
+		s.add(2);
+		s.add(9);
+		s.add(6);
+		s.add(4);
 		
-		System.out.println("Sort Method : " + l);
+		System.out.println("Sort Method : " + s);
 		
-	/*	Collections.sort(l);		// sort in default natural sorting order.
-		
-		System.out.println("After Sort Method for ascending order: " + l);
-		
-		Collections.sort(l, new MyComparator());
-		
-		System.out.println("After Sort Method for descending order: " + l);
-*/
 	}
 }

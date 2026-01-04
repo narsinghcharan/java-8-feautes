@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import com.myex.sge.pojo.Student;
@@ -35,6 +36,9 @@ public class SortingStreamOnMultipleFields2 {
 		
 		//if the key with which we want to create map is unique then we can create map like this		
 		Map<Integer, Student> studentMapById = students.stream().collect(Collectors.toMap(Student::getId, student -> student));
+		//or
+		//Map<Integer, Student> studentMapById = students.stream().collect(Collectors.toMap(student -> student.getId(), Function.identity()));
+		
 		
 		System.out.println(studentMapById);
 		

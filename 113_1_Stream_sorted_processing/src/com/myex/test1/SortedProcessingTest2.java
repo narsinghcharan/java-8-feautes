@@ -20,9 +20,9 @@ public class SortedProcessingTest2 {
 		
 		System.out.println(l1);
 	
-	//	List<Integer> l2 = l1.stream().sorted((i1,i2) -> i2.compareTo(i1)).collect(Collectors.toList());
+	//	List<Integer> l2 = l1.stream().sorted((i1,i2) -> i2.compareTo(i1)).collect(Collectors.toList());	//ascending order
 
-		List<Integer> l2 = l1.stream().sorted((i1,i2) -> -i1.compareTo(i2)).collect(Collectors.toList());
+		List<Integer> l2 = l1.stream().sorted((i1,i2) -> -i1.compareTo(i2)).collect(Collectors.toList());	//descending order
 
 		System.out.println("Reverse Sorting Order : " + l2);
 	}

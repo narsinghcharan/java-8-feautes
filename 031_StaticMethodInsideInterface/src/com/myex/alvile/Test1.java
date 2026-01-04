@@ -5,8 +5,8 @@ public class Test1 implements Interf{
 	public static void main(String[] agrs) {
 	
 		Test1 t = new Test1();
-	//	t.m1();		
-	//	Test.m1();
+	//	t.m1();			//compile time error
+	//	Test.m1();		//compile time error
 		Interf.m1();
 	}
 

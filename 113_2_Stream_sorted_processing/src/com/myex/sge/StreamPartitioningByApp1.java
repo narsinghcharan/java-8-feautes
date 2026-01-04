@@ -31,7 +31,8 @@ public class StreamPartitioningByApp1 {
 		 
 		 in partitioningBy(), grouping is done based on some condition.
 		 
-		 partitioningBy will always return a map with two entries, one for where the predicate is true and one for where it is false. It is possible that both entries will have empty lists, but they will exist.
+		 partitioningBy will always return a map with two entries, one for where the predicate is true and one for where it is false. 
+		 It is possible that both entries will have empty lists, but they will exist.
 		 
 		 That's something that groupingBy will not do, since it only creates entries when they are needed.
 		 

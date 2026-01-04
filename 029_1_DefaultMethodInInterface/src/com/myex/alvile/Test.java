@@ -11,10 +11,10 @@ public class Test implements Interf{
 	public static void main(String[] agrs) {
 	
 		Test t = new Test();
-		t.m1();		//default method will be called....
+		t.m1();		//overriding method will be called.
 		
 		Interf i = new Test();
-		i.m1();
+		i.m1();		//overriding method will be called.
 	}
 
 }

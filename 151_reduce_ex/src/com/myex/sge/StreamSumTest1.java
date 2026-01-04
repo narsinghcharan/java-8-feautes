@@ -13,7 +13,7 @@ public class StreamSumTest1 {
 		
 		List<Integer> numbers = Arrays.asList(1,2,3,4,5);
 		
-		Integer sum = numbers.stream().reduce(0, (a,b) -> a*b);
+		Integer sum = numbers.stream().reduce(0, (a,b) -> a+b);
 		System.out.println(sum);
 		
 		//Optional<Integer> optional = numbers.stream().reduce((a,b) -> a+b);

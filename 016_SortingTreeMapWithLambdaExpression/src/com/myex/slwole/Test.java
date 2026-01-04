@@ -7,7 +7,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Map<Integer,String> l = new TreeMap<Integer,String>((o1,o2) -> o1>o2?-1:o1<o2?1:0);
+		Map<Integer,String> l = new TreeMap<Integer,String>((o1,o2) -> o1>o2?-1:o1<o2?1:0);		//descending order
 		
 		l.put(5,"narsingh");
 		l.put(2,"charan");

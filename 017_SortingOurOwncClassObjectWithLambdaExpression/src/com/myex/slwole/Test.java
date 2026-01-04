@@ -22,7 +22,10 @@ public class Test {
 		//return -ve then obj1 come before obj2.
 		//return +ve then obj1 come after obj2.
 		//return 0 (zero) then obj and obj2 both are equal.
-		Collections.sort(l, (e1,e2) -> e1.getEmpNo()>e2.getEmpNo()?1:e1.getEmpNo()<e2.getEmpNo()?-1:0);
+		//Collections.sort(l, (e1,e2) -> e1.getEmpNo()>e2.getEmpNo()?1:e1.getEmpNo()<e2.getEmpNo()?-1:0);		//ascending logic
+		//or
+		Collections.sort(l, (e1,e2) -> e1.getEmpNo() - e2.getEmpNo());		//ascending logic
+		
 		
 		System.out.println("After Sort Method for ascending order: " + l);
 

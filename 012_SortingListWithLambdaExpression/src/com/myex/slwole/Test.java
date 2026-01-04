@@ -24,8 +24,10 @@ public class Test {
 		
 	//	Collections.sort( l , (o1,o2) -> { return (o1>o2) ? -1 : (o1<o2) ? 1 : 0;} );
 		
-		Collections.sort( l , (o1,o2) -> (o1>o2) ? -1 : (o1<o2) ? 1 : 0 );
-
+		//Collections.sort( l , (o1,o2) -> (o1>o2) ? -1 : (o1<o2) ? 1 : 0 );		//descending order
+		//or
+		Collections.sort(l, (i1, i2) -> -(i1-i2));			//descending order
+		
 		
 		System.out.println("After Sort Method for descending order: " + l);
 

@@ -11,7 +11,7 @@ public class JoinOrAppendStreamOfStrings1 {
 
 		List<Integer> numbers = Arrays.asList(1,2,3,4,5,1,2,8,9,3,4);
 		
-		 String numbersInJoinedString = numbers.stream().map(n -> n.toString()).collect(Collectors.joining());
+		 String numbersInJoinedString = numbers.stream().map(n -> n.toString()).collect(Collectors.joining(","));
 		 System.out.println(numbersInJoinedString);
 		 
 		 //----------------------------------------

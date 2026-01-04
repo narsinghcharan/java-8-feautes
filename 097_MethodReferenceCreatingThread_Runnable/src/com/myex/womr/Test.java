@@ -13,7 +13,7 @@ public class Test {
 	
 		Test obj = new Test();
 		
-		Runnable r = obj :: m1;	//whatever implementation is there inside m1() method I am using that for Runnable run() method implementation by method reference.
+		Runnable r = obj::m1;	//whatever implementation is there inside m1() method I am using that for Runnable run() method implementation by method reference.
 		
 		Thread t = new Thread(r);
 		

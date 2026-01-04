@@ -1,4 +1,4 @@
-//w.a.p to print sqaure of the given number using LongFunction
+//w.a.p to print square of the given number using LongFunction
 
 package com.myex.bf;
 
