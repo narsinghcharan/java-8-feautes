@@ -9,7 +9,7 @@ public class Java8StringJoinEx {
 	public static void main(String[] args) {
 		
 		//String join(CharSequence delimiter, CharSequence... elements)
-		String joinedString = String.join(", ", "How", "To", "Do", "In", "Java");
+		String joinedString = String.join("- ", "How", "To", "Do", "In", "Java");
 		System.out.println(joinedString);
 		
 		

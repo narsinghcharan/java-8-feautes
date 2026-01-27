@@ -3,6 +3,7 @@ package com.myex.slwole;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Test {
 
@@ -16,9 +17,11 @@ public class Test {
 		l.add(6);
 		l.add(4);
 		
+		List<Integer> l1 = new ArrayList<>(l);
+		
 		System.out.println("Before Sort Method : " + l);
 		
-		Collections.sort(l);		// sort in default natural sorting order.
+		Collections.sort(l);		// sort in default natural sorting order.	ASC-order
 		
 		System.out.println("After Sort Method for ascending order: " + l);
 		
@@ -28,8 +31,18 @@ public class Test {
 		//or
 		Collections.sort(l, (i1, i2) -> -(i1-i2));			//descending order
 		
-		
 		System.out.println("After Sort Method for descending order: " + l);
 
+		//we can also sort using stream.
+		System.out.println("-------------------------------------");
+		
+		System.out.println(l1);
+		List<Integer> l2 = l1.stream().sorted().collect(Collectors.toList());		// sort in default natural sorting order. ASC-order
+		System.out.println(l2);
+		
+		List<Integer> l3 = l1.stream().sorted((i1, i2) -> -(i1-i2)).collect(Collectors.toList());		// custom sorting order. DESC-order
+		System.out.println(l3);
+		
+		
 	}
 }

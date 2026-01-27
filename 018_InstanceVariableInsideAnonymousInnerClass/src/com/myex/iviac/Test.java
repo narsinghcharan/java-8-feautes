@@ -6,7 +6,7 @@ public class Test {
 
 	public void m2() {
 
-		Interf i = new Interf() {
+		Interf i = new Interf() {		//Anonymous inner class
 
 			int x = 999; // instance variable of anonymous inner class.
 
